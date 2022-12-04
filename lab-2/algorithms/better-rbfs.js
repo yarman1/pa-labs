@@ -119,12 +119,3 @@ const rbfs = (mazeData) => {
 module.exports = {
   rbfs,
 };
-
-// const mazeArrayJSON = fs.readFileSync('maze-data.json');
-// const mazeArray = JSON.parse(mazeArrayJSON);
-// for (let i = 0; i < 20; i++) {
-//   console.log(i + 1);
-//   const maze = mazeArray[i];
-
-//   rbfs(maze);
-// }
