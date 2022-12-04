@@ -1,0 +1,20 @@
+{
+  "name": "lab-2",
+  "version": "1.0.0",
+  "description": "Second laboratory work",
+  "main": "examples/example-all.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "example-ids": "node examples/example-ids.js",
+    "example-rbfs": "node examples/example-rbfs.js",
+    "example-all": "node examples/example-all.js",
+    "example-better-rbfs": "node examples/example-better-rbfs.js",
+    "test-failure": "node tests/test-failure.js",
+    "test-accurate-data": "node tests/test-accurate-data.js"
+  },
+  "author": "Yaroslav Hordiienko",
+  "license": "MIT"
+}
