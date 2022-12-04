@@ -1,7 +1,5 @@
 'use strict';
 
-const fs = require('fs');
-
 const { drawWay, showMaze } = require('../helpers/serialization');
 
 const MARKERS = {
@@ -98,16 +96,3 @@ const ids = function(mazeData) {
 module.exports = {
   ids,
 };
-
-// const mazeArrayJSON = fs.readFileSync('maze-data.json');
-// const mazeArray = JSON.parse(mazeArrayJSON);
-
-
-// for (let i = 0; i < 20; i++) {
-//   console.log(i + 1);
-//   const maze = mazeArray[i];
-
-//   setTimeout(()=>{}, 5000);
-
-//   ids(maze);
-// }
