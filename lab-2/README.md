@@ -1,5 +1,5 @@
 # Instruction for commands
-If you are using Windows, insert commands in cmd
+Npm and Node.js v18.12.1 are required. If you are using Windows, insert commands in cmd
 1. Example of the work of ids algorithm
 ```
 npm run example-ids
