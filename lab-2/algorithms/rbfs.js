@@ -90,7 +90,7 @@ const rbfsRecursive = (mazeData, node, limit, analyzeData) => {
       return {
         marker: MARKERS.failure,
         limit: Infinity,
-      };
+      }
     }
   }
 };
