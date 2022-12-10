@@ -54,8 +54,6 @@ const rbfsRecursive = (mazeData, node, limit, analyzeData) => {
     analyzeData.statesInMemory += 1;
   }
 
-
-
   while(true) {
     succesors.sort((a, b) => a.heuristicValue - b.heuristicValue);
     const best = succesors[0];
