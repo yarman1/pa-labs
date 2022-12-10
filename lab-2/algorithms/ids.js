@@ -9,6 +9,8 @@ const MARKERS = {
   deadEnd: 4,
 };
 
+//IDS algorithm
+
 const recursiveDLS = function(node, mazeData, limit, analyzeData) {
   const [ curRowNum, curColNum ] = node.coords;
   const [ solRowNum, solColNum ] = mazeData.cellEnd;
@@ -92,6 +94,8 @@ const ids = function(mazeData) {
     analyzeData,
   };
 };
+
+//end IDS algorithm
 
 module.exports = {
   ids,

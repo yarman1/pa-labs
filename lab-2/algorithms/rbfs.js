@@ -9,6 +9,8 @@ const MARKERS = {
   success: 2,
 };
 
+//RBFS algorithm
+
 const rbfsRecursive = (mazeData, node, limit, analyzeData) => {
   analyzeData.iterations += 1;
 
@@ -117,6 +119,8 @@ const rbfs = (mazeData) => {
     analyzeData,
   };
 };
+
+//end RBFS algorithm
 
 module.exports = {
   rbfs,
