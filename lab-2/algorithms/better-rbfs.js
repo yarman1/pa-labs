@@ -86,8 +86,8 @@ const rbfsRecursive = (mazeData, node, limit, analyzeData) => {
 
     bestCell.heuristicValue = result.limit;
 
-    const wrongWay = succesors.filter((x) => x.cell.heuristicValue != Infinity);
-    if (wrongWay.length === 0) {
+    const availableWays = succesors.filter((x) => x.cell.heuristicValue != Infinity);
+    if (availableWays.length === 0) {
       return {
         marker: MARKERS.failure,
         limit: Infinity,
