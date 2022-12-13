@@ -20,8 +20,12 @@ const MARKERS_RBFS = {
   success: 2,
 };
 
-const TEST_RESULTS_IDS = {
+const TEST_RESULTS_IDS_FAILURE = {
   marker: MARKERS_IDS.failure,
+};
+
+const TEST_RESULTS_IDS_SUCCESS = {
+  marker: MARKERS_IDS.success,
 };
 
 {
@@ -35,24 +39,28 @@ const TEST_RESULTS_IDS = {
 
   const resultFirst = ids(failureMaze);
   try {
-    assert.deepStrictEqual(resultFirst.result, TEST_RESULTS_IDS)
+    assert.deepStrictEqual(resultFirst.result, TEST_RESULTS_IDS_FAILURE)
   } catch (err) {
     console.log(err.message);
   }
 
-  //result will be success. It will cause an error
+  //result will be success
   const resultSecond = ids(mazeWithPath);
   try {
-    assert.deepStrictEqual(resultSecond.result, TEST_RESULTS_IDS)
+    assert.deepStrictEqual(resultSecond.result, TEST_RESULTS_IDS_SUCCESS)
   } catch (err) {
     console.log(err.message);
   }
   console.log('\n');
 }
 
-const TEST_RESULTS_RBFS = {
+const TEST_RESULTS_RBFS_FAILURE = {
   marker: MARKERS_RBFS.failure,
   limit: Infinity,
+};
+
+const TEST_RESULTS_RBFS_SUCCESS = {
+  marker: MARKERS_RBFS.success,
 };
 
 {
@@ -66,15 +74,15 @@ const TEST_RESULTS_RBFS = {
   
   const resultFirst = rbfs(failureMaze);
   try {
-    assert.deepStrictEqual(resultFirst.result, TEST_RESULTS_RBFS)
+    assert.deepStrictEqual(resultFirst.result, TEST_RESULTS_RBFS_FAILURE)
   } catch (err) {
     console.log(err.message);
   }
 
-  //result will be success. It will cause an error
+  //result will be success
   const resultSecond = rbfs(mazeWithPath);
   try {
-    assert.deepStrictEqual(resultSecond.result, TEST_RESULTS_RBFS)
+    assert.deepStrictEqual(resultSecond.result, TEST_RESULTS_RBFS_SUCCESS)
   } catch (err) {
     console.log(err.message);
   }
